@@ -12,18 +12,25 @@
         // // 新增元素
         // console.log(listOfname);
 
-        let arr = ['a', 'b', 'c', 'd']
-        let str = "";
-        for (let i = 0; i < arr.length; i++) {
-            if (str == "") {
-                str = arr[i];
-            }
-            // +=印出字串 str = str + ","
-            else {
-                str += "," + arr[i];
-            }
-            console.log(str);
-        }
+        // let arr = ['a', 'b', 'c', 'd']
+        // let str = "";
+        // for (let i = 0; i < arr.length; i++) {
+        //     if (str == "") {
+        //         str = arr[i];
+        //     }
+        //     // +=印出字串 str = str + ","
+        //     else {
+        //         str += "," + arr[i];
+        //     }
+        //     console.log(str);
+        // }
+
+        // 上面程式碼等同於下面這個，印出a,b,c,d
+        // Array.join()方法將陣列元素中所有的元素都合併成字串
+        let arr = ['a', 'b', 'c', 'd'];
+        console.log(arr.join(','));
+
+
 
     </script>
 </head>
