@@ -5,28 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>12-1-1</title>
+    <title>12-2-1</title>
+
     <script>
-        //建立基本函式
-        function say() {
-            console.log('Hello World');
+        let say = function () {
+            console.log('Hello World!');
         }
-        // 呼叫
         say()
 
 
-        //帶有參數的函式
-        function greet(name) {
+        let greet = function (name) {
             console.log('Hello,' + name);
         }
         greet('Alex');
 
 
-        //帶有參數的函式
-        function getMessage() {
-            return 'Good job!';
+        let getMessage = function (name) {
+            return 'Good job!' + name;
         }
-        console.log(getMessage());
+        let str = getMessage('Bill')
+        console.log(str);
 
     </script>
 </head>
